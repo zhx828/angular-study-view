@@ -12,11 +12,12 @@
     </div>
     <div id='summary'>
       <div class="nav navbar-nav">
-        <div class="container">
+        <div ng-class="{'container': $root.layoutBoxed,'had-container': !$root.layoutBoxed}">
           <div class="topButtons">
             <button class="btn btn-info">Select cases by IDs</button>
             <button class="btn btn-info">Query all samples</button>
             <button class="btn btn-info">View all cases</button>
+            <button class="btn btn-info" ng-click="$root.layoutBoxed=!$root.layoutBoxed">Switch layout</button>
           </div>
         </div>
       </div>

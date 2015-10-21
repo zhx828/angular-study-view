@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css" />
     <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="bower_components/datatables-scroller/css/dataTables.scroller.css" />
+    <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -22,13 +23,13 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/basic/jquery.qtip.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/basic/jquery.qtip.min.css">
-    
-    
+
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="studyMultiViewsApp" ng-init="clicked=false">
+  <body ng-app="studyMultiViewsApp" ng-init="clicked=false" ng-controller="MainCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,7 +37,7 @@
     <!-- Add your site or application content here -->
     <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div ng-class="{'container': $root.layoutBoxed,'had-container': !$root.layoutBoxed}">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -46,7 +47,7 @@
             </button>
             <img class="navbar-brand" src="images/cbioportal_logo.png"/>
             <!-- <img style="padding-top:30px" src="images/study-summary.png"/> -->
-            
+
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -58,10 +59,10 @@
         </div>
       </div>
     </header>
-    <div class="container" ng-view="">
+    <div ng-class="{'container': $root.layoutBoxed,'had-container': !$root.layoutBoxed}" ng-view="">
     </div>
     <footer class="footer">
-      <div class="container"></div>
+      <div ng-class="{'container': $root.layoutBoxed,'had-container': !$root.layoutBoxed}"></div>
     </footer>
 
 
@@ -138,6 +139,7 @@
     <script src="bower_components/draggabilly/draggabilly.js"></script>
     <script src="bower_components/angular-packery/dist/packery.js"></script>
     <script src="bower_components/datatables-scroller/js/dataTables.scroller.js"></script>
+    <script src="bower_components/Materialize/bin/materialize.js"></script>
     <!-- endbower -->
 
     <script src="//cdn.jsdelivr.net/qtip2/2.2.1/basic/jquery.qtip.js"></script>

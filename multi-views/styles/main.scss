@@ -62,8 +62,6 @@ body {
   margin-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px dotted #2968e2;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 #summary .dc-charts {
   margin-top: 60px;
@@ -89,6 +87,9 @@ body {
 .navbar {
   min-height: 80px;
 }
+#summary .navbar-nav {
+  padding: 0 10px 0 10px;
+}
 header .navbar-nav {
   float: right;
   padding-top: 30px;
@@ -99,7 +100,7 @@ header .navbar-nav {
 }
 .navbar-inverse {
   background-color: #fff;
-  border-bottom: 2px solid #2986e2; 
+  border-bottom: 2px solid #2986e2;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -107,7 +108,7 @@ header .navbar-nav {
   background-color: transparent;
   cursor: default;
 }
-.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus{
   color: #777;
@@ -146,7 +147,7 @@ header .navbar-nav {
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: #777;
 }
@@ -213,7 +214,7 @@ table.dataTable thead th, table.dataTable thead td {
     margin-bottom: 2px;
 }
 
-//Styles from study view, need to reorganize and remove unused styles 
+//Styles from study view, need to reorganize and remove unused styles
 #study-view-top-wrapper {
     width: 100%;
     float: left;
@@ -326,7 +327,7 @@ table.dataTable thead th, table.dataTable thead td {
     height:auto;
     overflow: hidden;
 }
-#study-view-charts {  
+#study-view-charts {
     width:1200px;
     height:auto;
     margin:0 auto;
@@ -441,7 +442,7 @@ table.dataTable thead th, table.dataTable thead td {
     float: left;
 }*/
 #study-view-word-cloud-title {
-    width:180px; 
+    width:180px;
     text-align:center;
     margin-bottom: 20px;
 }
@@ -485,7 +486,7 @@ table.dataTable thead th, table.dataTable thead td {
     margin-left: 3px;
 }
 /* CLASS styles */
-.study-view-header{    
+.study-view-header{
     //border-style: solid;
     //border-width: 1px;
     //border-color: lightgrey;
@@ -506,7 +507,7 @@ table.dataTable thead th, table.dataTable thead td {
     display: inline-block;
     line-height: 30px;
 }
-.study-view-header:hover{    
+.study-view-header:hover{
     cursor: pointer !important;
     background-color: #2986e2 !important;
     color: white !important;
@@ -539,7 +540,7 @@ table.dataTable thead th, table.dataTable thead td {
     border-spacing: 0px;
 }
 .study-view-scatter-plot-checkbox {
-    margin: 5px 10px 0px 0px; 
+    margin: 5px 10px 0px 0px;
     color: grey;
     font-size: 10px;
 }
@@ -694,15 +695,15 @@ table.dataTable thead th, table.dataTable thead td {
     margin-right: 5px;
     color: grey;
     cursor: pointer;
-} 
+}
 
-.study-view-chart-plot-delete{  
+.study-view-chart-plot-delete{
     margin-right: 5px;
     color: grey;
     cursor: pointer;
     float: right;
 }
-.study-view-chart-cloud-delete{  
+.study-view-chart-cloud-delete{
     margin-right: 5px;
     color: lightgray;
     cursor: pointer;
@@ -781,7 +782,7 @@ pieH3{
 }
 .data-pie-chart {
     width:100px;
-    float:left; 
+    float:left;
     text-align:center;
 }
 .subData {
@@ -886,7 +887,7 @@ pieH3{
     fill-opacity: .125;
     shape-rendering: crispEdges;
     z-index: -1;
-} 
+}
 .row_selected{
     background-color: lightgray;
 }
@@ -945,7 +946,7 @@ pieH3{
     -moz-transition: All 0.3s ease;
     -o-transition: All 0.3s ease;
     -ms-transition: All 0.3s ease;
-    transition: All 0.3s ease;    
+    transition: All 0.3s ease;
 }
 
 Style for search box in dataTable of Summaery Tab
@@ -1063,7 +1064,7 @@ Style for search box in dataTable of Summaery Tab
     top: 30%;
 }
 
-/* These five styles are designed for study view tabs. 
+/* These five styles are designed for study view tabs.
 #dc-plots {
     border: 1px solid #aaaaaa;
     border-radius: 5px;
@@ -1114,7 +1115,7 @@ ul li a:hover, ul li a:focus {
 #data-table-chart table.dataTable>thead>tr>th:nth-child(1) {background-color: white; white-space: nowrap;}
 #data-table-chart table.dataTable>thead>tr>th {
     //white-space:nowrap;
-    //-webkit-transform: rotate(315deg);  
+    //-webkit-transform: rotate(315deg);
     //-moz-transform: rotate(315deg);
     //-ms-transform: rotate(315deg);
    // -o-transform: rotate(315deg);

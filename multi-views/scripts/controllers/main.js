@@ -9,8 +9,8 @@
  */
 angular.module('studyMultiViewsApp')
   .controller('MainCtrl',
-  	['$scope', '$compile', 'DataProxy', 'DataPool', 'crossfilter', '$window',
-  	function ($scope, $compile, DataProxy, DataPool, crossfilter, $window) {
+  	['$scope', '$compile', 'DataProxy', 'DataPool', 'crossfilter', '$window', '$rootScope',
+  	function ($scope, $compile, DataProxy, DataPool, crossfilter, $window, $rootScope) {
   		function init() {
   			//Get global variables
         	var startTS = new Date().getTime();
@@ -33,7 +33,7 @@ angular.module('studyMultiViewsApp')
         		timeDiff(startTS, new Date().getTime());
                 console.log($scope);
   			});
-  			
+
   			//function()
   			//if no data available
   		}
@@ -173,6 +173,8 @@ angular.module('studyMultiViewsApp')
   			console.log('Sample crossfilter has ', $scope.cf.sample.size(), 'data');
  			console.log('------------------------------------------------');
   		}
+
+      $rootScope.layoutBoxed = true;
 
 	    init();
 	}
