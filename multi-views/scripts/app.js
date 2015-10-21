@@ -41,7 +41,7 @@ angular
       	.otherwise({
         	redirectTo: '/'
       	});
-        
+
 	$provide.decorator('$q', ['$delegate', function ($delegate) {
 		var $q = $delegate;
 

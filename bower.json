@@ -17,9 +17,6 @@
     "angular-loading-bar": "~0.6.0",
     "underscore": "~1.7.0",
     "angular-underscore": "~0.5.0",
-    "chosen": "~1.3.0",
-    "bootstrap-chosen": "~1.0.0",
-    "angular-chosen-localytics": "~1.0.6",
     "d3": "~3.5.3",
     "dcjs": "2.0.0-alpha.2",
     "font-awesome": "~4.2.0",
@@ -28,15 +25,25 @@
     "angular-dc": "~0.0.6",
     "lodash": "~2.4.1",
     "angular-bootstrap": "~0.12.0",
-    "angular-datatables": "~0.3.1",
+    "angular-datatables": "~0.5.0",
     "qTip2": "~2.2.1",
     "angular-packery": "~1.0.1",
-    "datatables-scroller": "~1.2.2",
-    "Materialize": "materialize#~0.97.1"
+    "datatables-scroller": "~1.3.0",
+    "Materialize": "materialize#~0.97.1",
+    "packery": "~1.4.3",
+    "draggabilly": "~1.2.4"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",
     "angular-scenario": "~1.2.0"
   },
-  "appPath": "multi-views"
+  "appPath": "multi-views",
+  "resolutions": {
+    "jquery": "~2.1.3",
+    "angular": "~1.3.20",
+    "dcjs": "2.0.0-beta.3",
+    "angular-bootstrap": "~0.12.0",
+    "datatables-scroller": "~1.3.0",
+    "angular-datatables": "~0.5.0"
+  }
 }
